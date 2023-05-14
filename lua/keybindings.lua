@@ -68,6 +68,14 @@ map("n", "Q", ":qa!<CR>", opt)
 map("i", "<C-h>", "<ESC>I", opt)
 map("i", "<C-l>", "<ESC>A", opt)
 
+-- 全选复制文件
+map("n", "<leader>y", "<ESC>:%y<CR>", opt)
+-- map("i", "<leader>y", "<ESC>:%y<CR>a", opt)
+
+-- 删除（非剪切）
+map("n", "<leader>d", '"_dd', opt)
+map("v", "<leader>d", '"_dd', opt)
+
 -- bufferline
 -- 左右Tab切换
 map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
@@ -84,6 +92,9 @@ map("n", "<leader>bc", ":BufferLinePickClose<CR>", opt)
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)
 -- 全局搜索
 map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
+
+-- 代码运行器
+map("n", "<leader>r", ":RunCode<CR>", { noremap = true, silent = false })
 
 -- 插件快捷键
 local pluginKeys = {}

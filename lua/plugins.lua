@@ -54,12 +54,18 @@ packer.startup(function(use)
 	use({ "jose-elias-alvarez/nvim-lsp-ts-utils", requires = "nvim-lua/plenary.nvim" })
 	-- Rust 增强
 	use("simrat39/rust-tools.nvim")
+	-- Clangd 增强
+	use("p00f/clangd_extensions.nvim")
+
 	-- surround
 	use("ur4ltz/surround.nvim")
 	-- Comment
 	use("numToStr/Comment.nvim")
 	-- nvim-autopairs
 	use("windwp/nvim-autopairs")
+
+	-- 代码运行器
+	use("CRAG666/code_runner.nvim")
 end)
 
 -- 每次保存 plugins.lua 自动安装插件

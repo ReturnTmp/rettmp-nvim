@@ -31,7 +31,7 @@ mason.setup({
 -- mason-lspconfig uses the `lspconfig` server names in the APIs it exposes - not `mason.nvim` package names
 -- https://github.com/williamboman/mason-lspconfig.nvim/blob/main/doc/server-mapping.md
 mason_config.setup({
-	ensure_installed = { "lua_ls", "html", "cssls", "emmet_ls", "jsonls", "rust_analyzer" },
+	ensure_installed = { "clangd", "lua_ls", "html", "cssls", "emmet_ls", "jsonls", "rust_analyzer" },
 })
 
 -- 安装列表
@@ -45,6 +45,7 @@ local servers = {
 	emmet_ls = require("lsp.config.emmet"),
 	jsonls = require("lsp.config.json"),
 	rust_analyzer = require("lsp.config.rust"),
+	clangd = require("lsp.config.clangd"),
 }
 
 for name, config in pairs(servers) do

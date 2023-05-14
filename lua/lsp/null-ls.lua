@@ -16,6 +16,8 @@ null_ls.setup({
 		formatting.stylua, -- frontend
 		formatting.prettier.with({ -- 只比默认配置少了 markdown
 			filetypes = {
+				"c",
+				"cpp",
 				"rust",
 				"javascript",
 				"javascriptreact",
@@ -32,6 +34,8 @@ null_ls.setup({
 			},
 			prefer_local = "node_modules/.bin",
 		}),
+		-- clang-format
+		formatting.clang_format,
 		-- rustfmt
 		formatting.rustfmt,
 		-- Diagnostics  ---------------------
