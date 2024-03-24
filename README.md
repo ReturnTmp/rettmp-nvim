@@ -1,2 +1,5 @@
-# rettmp-nvim
-Neovim 个人配置
+## Neovim 基础配置
+
+快捷键，插件，主题，侧边栏文件浏览器，顶部标签页和底部信息栏，模糊搜索快速查找，自定义启动页，语法高亮，LSP 基础及功能增强，代码格式化，前端及 Rust 配置等
+
+详细配置介绍文章：[『Neovim』配置教程](https://blog.csdn.net/m0_63748493/article/details/130653594)
